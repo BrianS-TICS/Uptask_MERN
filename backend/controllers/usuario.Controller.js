@@ -46,7 +46,7 @@ const autenticar = async (req, res) => {
             _id : usuario._id,
             nombre : usuario.nombre,
             email : usuario.email,
-            token: generarJWT(usuario._id)
+            token: generaacrJWT(usuario._id)
         }); 
     }else{
         const error = new Error("El password es incorrecta");
